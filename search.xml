@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title></title>
+    <url>/2021/11/28/cara-menulis-teks-arab-pada-libreoffice/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>Mengatasi Gagal Memutar Video di Gnome Web / Epiphany 3.28.6</title>
+    <url>/2020/12/30/epiphany-html5-video/</url>
+    <content><![CDATA[<p>Sebagai pengguna Elementary-OS, web browser bawaan yang disuguhkan adalah Epiphany yang memiliki tampilan sangat sederhana. Hal ini sesuai dengan slogan dari Elementary OS itu sendiri. </p>
+<p>Akan tetapi, semenjak Youtube mengganti format video ke versi html5, saya tidak dapat memutar Video dari Youtube lagi.</p>
+<span id="more"></span>Muncul pesan bahwa browser tidak mendukung format video yang tersedia.
+
+<p>Saya coba periksa melalui sitush <a href="https://html5test.com/">HTML5Test</a> hasilnya menampilkan browser saya mampu memutar video html5. Tapi tidak satupun video dari Youtube yang dapat diputar. Aneh kan?</p>
+<p>Setelah sekian lama mencari solusinya. Akhirnya, saya menemukan solusinya dari (<a href="https://ubuntuforums.org/showthread.php?t=2392660">https://ubuntuforums.org/showthread.php?t=2392660</a>). Agar browser dapat memutar video, maka saya harus memasang paket-paket berikut:</p>
+<figure class="highlight bash"><figcaption><span>Code</span></figcaption><table><tr><td class="code"><pre><span class="line">sudo apt install gstreamer1.0-gl gstreamer1.0-libav</span><br></pre></td></tr></table></figure>
+
+<p>Dan akhirnya, saya bisa memutar video di Youtube kembali.</p>
+]]></content>
+      <categories>
+        <category>Tips</category>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>epiphany</tag>
+        <tag>html5 video</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2021/11/28/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Mailmerge Menggunakan Inkscape</title>
+    <url>/2018/05/15/inkscape-mail-merge/</url>
+    <content><![CDATA[<p>Pada catatan kali ini, saya akan membagikan tutorial bagaimana membuat mailmerge menggunakan Inkscape. Metode ini sangat cocok diterapkan dalam pembuatan sertifikat, kartu nama, dan lain-lain. Apa saja perkakas yang diperlukan?</p>
+<span id="more"></span>
+<h2 id="Software-yang-diperlukan"><a href="#Software-yang-diperlukan" class="headerlink" title="Software yang diperlukan"></a>Software yang diperlukan</h2><ul>
+<li>  <a href="https://inkscape.org/release/inkscape-1.0/">Inkscape</a></li>
+<li>  <a href="https://github.com/butesa/ink-generator-python">Ink-generator</a></li>
+</ul>
+<h2 id="Memasang-Extension-Inkscape"><a href="#Memasang-Extension-Inkscape" class="headerlink" title="Memasang Extension Inkscape"></a>Memasang Extension Inkscape</h2><ul>
+<li>  Untuk pengguna Windows, letakkan file <em>generator.inx</em> dan <em>generator.py</em> ke dalam folder <strong>C:Program filesInkscapeshareextensions</strong> (untuk semua User) atau <strong>C:UsersApplication DataRoaminginkscapeshareextension</strong> (untuk satu User)</li>
+<li>  Untuk pengguna GNU/Linux, letakkan file <em>generator.inx</em> dan <em>generator.py</em> ke dalam folder <strong>/usr/share/inkscape/extensions</strong> (untuk semua User) atau <strong>/home//.config/inkscape/extensions/</strong> (untuk satu User)</li>
+</ul>
+<h2 id="Mulai-Membuat-“Mailmerge”"><a href="#Mulai-Membuat-“Mailmerge”" class="headerlink" title="Mulai Membuat “Mailmerge”"></a>Mulai Membuat “Mailmerge”</h2><ul>
+<li>  Siapkan desain kartu / sertifikat / lainnya yang hendak dibuat “mailmerge”-nya</li>
+<li>Siapkan juga tabel data yang digunakan untuk mailmerge. Untuk nama kolom usahakan jangan ada Spasi, agar tidak menimbulkan Error.  <a href="https://nurkholis.web.id/wp-content/uploads/2018/05/Cuplikan-2Blayar-2Bdari-2B2018-05-15-2B05.58.13.png"><img src="https://nurkholis.web.id/wp-content/uploads/2018/05/Cuplikan-2Blayar-2Bdari-2B2018-05-15-2B05.58.13-300x90.png"></a>  contoh tabel data untuk mailmerge di inkscape  Simpan ke dalam format csv.</li>
+<li>  Jika mail merge yang dikehendaki membutuhkan gambar / foto. Simpan gambar-gambar / foto-foto tersebut ke dalam satu folder yang sama</li>
+<li>  Buatlah teks baru untuk variabel dengan format %VAR_%. Sesuaikan dengan nama kolom di file data tadi. Misal untuk kolom nama, kita buat teks %VAR_nama%</li>
+<li>  Jika menghendaki gambar, Import gambar dengan Import type Link</li>
+<li>  Untuk menggunakan Ink-Generator, klik menu <strong>Extensions &gt; Export &gt; Generator</strong></li>
+</ul>
+<p>Demikian tadi tutorial bagaimana membuat mailmerge menggunakan inkscape. Semoga artikel ini bisa bermanfaat</p>
+]]></content>
+      <categories>
+        <category>Tutorial</category>
+        <category>Inkscape</category>
+      </categories>
+      <tags>
+        <tag>inkscape generator</tag>
+        <tag>mail merge</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Membuat Teks Melengkung pada Inkscape</title>
+    <url>/2020/07/29/inkscape-teks-melengkung/</url>
+    <content><![CDATA[<h2 id="Prakata"><a href="#Prakata" class="headerlink" title="Prakata"></a>Prakata</h2><p>Dalam mendesain stempel, logo atau lencana, sering kali kita membutuhkan teks yang melengkung / melingkar pada bagian tepinya. Ternyata, di Inkscape kita bisa melakukannya dengan sangat mudah. Kita hanya membutuhkan dua kali klik saja.</p>
+<span id="more"></span>
+<h2 id="Cara-Membuat-Teks-Melengkung"><a href="#Cara-Membuat-Teks-Melengkung" class="headerlink" title="Cara Membuat Teks Melengkung"></a>Cara Membuat Teks Melengkung</h2><blockquote>
+<p><strong>Bagaimanakah caranya?</strong><br>Untuk membuat teks melengkung di Inkscape, cukup Blok Teks dan Lingkaran, kemudian Klik Menu <strong>Text &gt; Put on Path</strong></p>
+</blockquote>
+<p><img src="/img/post/ink-text-to-path1.gif" alt="Text &gt; Put on Path"></p>
+<p>Cukup sederhana bukan? Kita hanya perlu memilih teks dan lingkaran, bisa memilih satu per satu menggunakan Shift, atau drag menggunakan <strong>Select</strong> tool. Kemudian klik Menu <strong>Text &gt; Put on Path</strong>. Jika <em>Iterface</em> Inkscape Anda menggunakan bahasa Indonesia, klik Menu <strong>Teks &gt; Letak di Tapak</strong></p>
+<h3 id="Memutar-Posisi-Teks"><a href="#Memutar-Posisi-Teks" class="headerlink" title="Memutar Posisi Teks"></a>Memutar Posisi Teks</h3><p>Kita bisa memutar posisi teks dengan cara memutar lingkarannya. Ingat! Lingkaraannya yang kita putar, bukan Teksnya.</p>
+<p><img src="/img/post/ink-text-to-path2.gif" alt="Memutar teks"></p>
+<h3 id="Mengatur-Ukuran-Lengkung-Teks"><a href="#Mengatur-Ukuran-Lengkung-Teks" class="headerlink" title="Mengatur Ukuran Lengkung Teks"></a>Mengatur Ukuran Lengkung Teks</h3><p>Kita juga bisa mengatur besar kecil ukuran lengkung teks juga dari lingkarannya. Cukup ubah ukuran lingkarannya saja.</p>
+<p><img src="/img/post/ink-text-to-path3.gif" alt="Mengubah ukuran lengkung"></p>
+<h3 id="Meletakan-Teks-di-Dalam-Lingkaran"><a href="#Meletakan-Teks-di-Dalam-Lingkaran" class="headerlink" title="Meletakan Teks di Dalam Lingkaran"></a>Meletakan Teks di Dalam Lingkaran</h3><blockquote>
+<p>Untuk teks ada di dalam lingkaran, bagaimana?</p>
+</blockquote>
+<p>Untuk meletakan teks di dalam lingkaran, cukup kita balikkan posisi teksnya secara horizontal.</p>
+<p><img src="/img/post/ink-text-to-path4.gif" alt="Meletakkan teks di dalam"></p>
+<h3 id="Menyunting-Teks"><a href="#Menyunting-Teks" class="headerlink" title="Menyunting Teks"></a>Menyunting Teks</h3><p>Teks tidak sesuai? Cukup Klik atau blok teksnya (dobel klik pada objek teks untuk masuk ke mode teks) , kita tinggal ubah jenis atau ukuran font sesuai selera. Kita juga bisa atur jarak antar huruf maupun pengaturan <em>kerning</em> lainnya.</p>
+<p><img src="/img/post/ink-text-to-path5.gif" alt="Mengedit teks"></p>
+]]></content>
+      <categories>
+        <category>Tutorial</category>
+        <category>Inkscape</category>
+      </categories>
+      <tags>
+        <tag>inkscape</tag>
+        <tag>text effect</tag>
+        <tag>stamp</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Fungsi Terbilang Untuk LibreOffice Calc</title>
+    <url>/2017/10/22/libreoffice-fungsi-terbilang/</url>
+    <content><![CDATA[<p>Bagi sebagian besar pengguna Aplikasi pengolah angka Microsoft Excel, Fungsi Terbilang banyak dipergunakan di berbagai kalangan untuk membilang suatu bilangan menjadi kalimat. Khususnya bagi Anda yang hendak membuat format kwitansi, atau format nilai siswa yang menampilkan nilai angka dan nilai huruf. Namun demikian, fungsi ini bukanlah fungsi bawaan dari aplikasi pengolah angka manapun (baik Excel, Calc, maupun yang lainnya). Satu-satunya fungsi terbilang yang resmi ada di daftar formula pengolah angka hanyalah BAHTTEXT yang mengubah bilangan menjadi teks dalam bahasa Thailand beserta mata uangnya. Sehingga untuk fungsi TERBILANG dalam bahasa Indonesia maupun yang lainnya, diperlukan UDF (User Defined Function).</p>
+<span id="more"></span>
+
+<h2 id="NumberText-sebagai-Solusi-Fungsi-Terbilang"><a href="#NumberText-sebagai-Solusi-Fungsi-Terbilang" class="headerlink" title="NumberText sebagai Solusi Fungsi Terbilang"></a>NumberText sebagai Solusi Fungsi Terbilang</h2><p>Pada LibreOffice Calc, Anda tidak perlu repot-repot membuat fungsi terbilang itu sendiri, karena di situs resmi LibreOffice telah disediakan extension untuk mengatasi hal tersebut. Extension yang perlu disiapkan adalah numbertext-0.9.5.oxt yang dapat diunduh di <a href="https://extensions.libreoffice.org/extensions/numbertext-1">https://extensions.libreoffice.org/extensions/numbertext-1</a>. Anda juga dapat mengunduhnya di situs resmi Numbertext <a href="http://www.numbertext.org/">http://www.numbertext.org/</a>. Extension ini kompatible dengan versi LibreOffice 3.6 ke atas.</p>
+<h2 id="Kelebihan-dan-Kekurangan-NumberText"><a href="#Kelebihan-dan-Kekurangan-NumberText" class="headerlink" title="Kelebihan dan Kekurangan NumberText"></a>Kelebihan dan Kekurangan NumberText</h2><h3 id="Kelebihan"><a href="#Kelebihan" class="headerlink" title="Kelebihan"></a>Kelebihan</h3><ol>
+<li> Tidak perlu mengaktifkan Macro</li>
+<li> Formula dapat dijalankan di berbagai komputer yang menggunakan extension ini pada LibreOffice Calc / OpenOffice.org Calc. Berbeda dengan Add Ins pada Ms.Excel yang harus memperbaiki ulang rumus terbilang saat dijalankan di komputer lain.</li>
+<li> Mampu menangani bilangan hingga 15 digit (ratusan trilyun)</li>
+<li> Mampu menangani desimal hingga 15 digit</li>
+<li> Memiliki dukungan multi-bahasa. Ada 42 bahasa yang didukung dengan extension ini.</li>
+</ol>
+<h3 id="Kekurangan"><a href="#Kekurangan" class="headerlink" title="Kekurangan"></a>Kekurangan</h3><ol>
+<li> Belum ada dukungan untuk bahasa Arab</li>
+<li> Extension ini hanya tersedia untuk LibreOffice Calc dan OpenOffice.org Calc, sehingga akan menghasilkan #NAME? saat dibuka pada aplikasi pengolah angka lainnya.</li>
+</ol>
+<h2 id="Instalasi"><a href="#Instalasi" class="headerlink" title="Instalasi"></a>Instalasi</h2><p>Untuk instalasi Extension tersebut, langkah-langkahnya adalah sebagai berikut:</p>
+<ol>
+<li> Buka file numbertext-0.9.5.oxt hingga muncul dialog konfirmasi.</li>
+<li> Klik Yes / OK</li>
+<li> Tunggu hingga proses selesai, kemudian klik Close</li>
+</ol>
+<p>Setelah selesai proses instalasi Extension, Restart Aplikasi LibreOffice agar agar Extension tersebut dapat dijalankan.</p>
+<h2 id="Penggunaan-Formula"><a href="#Penggunaan-Formula" class="headerlink" title="Penggunaan Formula"></a>Penggunaan Formula</h2><p>Terdapat dua rumus baru pada LibreOffice Calc setelah Numbertext terpasang. Kedua rumus baru itu adalah NUMBERTEXT() dan MONEYTEXT().<br>Untuk membilang bilangan ke dalam teks, sintaks rumusnya adalah<br><strong>=NUMBERTEXT(</strong><em>Number, Language</em><strong>)</strong>.<br> Sedangkan untuk membilang bilangan ke dalam teks disertai mata uang, sintaks rumusnya adalah <strong>=MONEYTEXT(</strong><em>Number, Currency/function, Language</em><strong>)</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Sintaks</strong></th>
+<th><strong>Fungsi</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Number</strong></td>
+<td>bilangan yang hendak diubah</td>
+</tr>
+<tr>
+<td><strong>Currency/function</strong></td>
+<td>menampilkan dan mengatur tipe mata uang. Apabila dikosongi, mata uang yang ditampilkan adalah mata uang standar dari bahasa yang digunakan.</td>
+</tr>
+<tr>
+<td><strong>Language</strong></td>
+<td>Bahasa yang digunakan, jika dikosongi bahasa yang dihasilkan adalah bahasa default Locale Setting (lihat di menu Tools &gt; Option &gt; Language Settings )</td>
+</tr>
+</tbody></table>
+<p> Untuk lebih jelasnya, perhatikan contoh berikut:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Formula</strong></th>
+<th><strong>Hasil</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>=NUMBERTEXT(25)</td>
+<td>dua puluh lima</td>
+</tr>
+<tr>
+<td>=NUMBERTEXT(25;”th-TH”)</td>
+<td>ยี่สิบห้า</td>
+</tr>
+<tr>
+<td>=NUMBERTEXT(25,25;”en-US”)</td>
+<td>twenty-five point two five</td>
+</tr>
+<tr>
+<td>=MONEYTEXT(25)</td>
+<td>dua puluh lima rupiah</td>
+</tr>
+<tr>
+<td>=MONEYTEXT(25;”USD”)</td>
+<td>dua puluh lima dolar Amerika</td>
+</tr>
+<tr>
+<td>=MONEYTEXT(25;”CNY”;”zh-ZH”)</td>
+<td>二十五人民币</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>Tutorial</category>
+        <category>LibreOffice</category>
+      </categories>
+      <tags>
+        <tag>Calc</tag>
+        <tag>Extension</tag>
+        <tag>LibreOffice</tag>
+        <tag>Office</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hapus Data Ganda pada LibreOffice Calc</title>
+    <url>/2020/09/02/libreoffice-hapus-duplikat/</url>
+    <content><![CDATA[<p>Beberapa waktu yang lalu, ada yang bertanya terkait cara hapus data duplikat / ganda pada LibreOffice Calc. Selidik punya selidik, ternyata fitur ini tidak tersedia secara <em>native</em> di LibreOffice. Namun, bukan berarti tidak ada cara menghapus data ganda tersebut. </p>
+<p>Pada kesempatan kali ini, kita akan bahas beberapa cara yang dapat kita lakukan untuk menangani data ganda / duplikat pada LibreOffice Calc. </p>
+<span id="more"></span>
+<h2 id="Ekstensi-Remove-Duplicate"><a href="#Ekstensi-Remove-Duplicate" class="headerlink" title="Ekstensi Remove Duplicate"></a>Ekstensi Remove Duplicate</h2><p>Meski fitur <em>Remove Duplicate</em> (hapus data ganda) belum ada secara <em>native</em> pada LibreOffice, tetapi ada ekstensi yang dapat kita pasang untuk melakukan hal tersebut.Kita dapat mengunduhnya pada tautan <a href="https://extensions.libreoffice.org/en/extensions/show/remove-duplicates">Remove Duplicates</a> atau <a href="https://extensions.libreoffice.org/en/extensions/show/remove-duplicates-fast">Remove Duplicates Fast</a>. Keduanya mempunyai fitur dan cara kerja yang sama dengan fitur Remove Duplicates pada Ms. Excel.</p>
+<h3 id="Instalasi-Ekstensi"><a href="#Instalasi-Ekstensi" class="headerlink" title="Instalasi Ekstensi"></a>Instalasi Ekstensi</h3><p>Untuk menginstal Ekstensi Remove Duplicates / Remove Duplicates Fast, langkah-langkahnya adalah sebagai berikut:</p>
+<ol>
+<li>Klik Meno <em>Tools &gt; Extension Manager</em></li>
+<li>Klik <em>Add</em>, kemudian pilih File ekstensi (format .oxt) yang akan dipasang</li>
+<li>Jika muncul pesan <em>Term &amp; Agreement</em>, scroll ke bawah kemudian klik <em>Accept</em></li>
+<li>Tunggu proses hingga selesai, kemudian <em>restart</em> LibreOffice</li>
+</ol>
+<h3 id="Penggunaan"><a href="#Penggunaan" class="headerlink" title="Penggunaan"></a>Penggunaan</h3><p>Untuk menggunakan Ekstensi ini, langkah-langkahnya:</p>
+<ol>
+<li>Blok Range / Tabel yang hendak dihapus datanya</li>
+<li>Klik menu <em>Data &gt; Remove Duplicates</em></li>
+<li>Tekan <em>Ctrl+Click</em> untuk memilih / batal memilih kolom-kolom yang dianalisa data duplikatnya<br><img src="/img/post/libreoffice-removedup1.png"></li>
+<li>Klik OK</li>
+</ol>
+<h2 id="Cara-Alternatif"><a href="#Cara-Alternatif" class="headerlink" title="Cara Alternatif"></a>Cara Alternatif</h2><p>Selain menggunakan ekstensi, ada beberapa alternatif lain menghapus data duplikat pada LibreOffice Calc. Sebenarnya, ini tidak benar-benar menghapus data duplika, tetapi lebih tepat disebut sebagai memilih data unik dari data ganda yang sudah ada.</p>
+<h3 id="Menggunakan-Filter"><a href="#Menggunakan-Filter" class="headerlink" title="Menggunakan Filter"></a>Menggunakan Filter</h3><p>Dengan menggunakan <em>Standar Filter</em>, kita bisa memilih data unik dan menyalinnya ke Sheet / Range lain. Caranya:</p>
+<ol>
+<li>Blok Range / Tabel yang hendak difilter</li>
+<li>Klik Menu <em>Data &gt; More Filter &gt; Standar Filter</em></li>
+<li>Atur kolom-kolom yang hendak difilter</li>
+<li>Klik <em>Option</em>, centang <em>No Duplications</em>, dan <em>Copy results to:</em></li>
+<li>Atur lokasi untuk meletakkan hasil Filter, Misal ke <em>Sheet2$A$1</em><br><img src="/img/post/libreoffice-removedup2.png"></li>
+<li>Klik OK </li>
+</ol>
+<p>Demikian tadi beberapa cara menghapus data ganda pada LibreOffice Calc. Semoga kedepannya fitur <em>Remove Duplicates</em> ini bisa ada secara <em>native</em> pada LibreOffice Calc.</p>
+]]></content>
+      <categories>
+        <category>Tutorial</category>
+        <category>LibreOffice</category>
+        <category>Calc</category>
+      </categories>
+      <tags>
+        <tag>libreoffice</tag>
+        <tag>calc</tag>
+        <tag>remove duplicate</tag>
+        <tag>hapus ganda</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mengatasi Ranking Ganda pada LibreOffice Calc</title>
+    <url>/2018/03/10/libreoffice-mengatasi-ranking-ganda/</url>
+    <content><![CDATA[<h2 id="Masalah-Ranking-Ganda"><a href="#Masalah-Ranking-Ganda" class="headerlink" title="Masalah Ranking Ganda"></a>Masalah Ranking Ganda</h2><p>Beberapa waktu yang lalu, saya pernah mendapatkan pertanyaan seputar rangking ganda. Yakni bagaimana memunculkan rangking ganda, tanpa urutan terlewat. Misal terdapat rangking 3 sebanyak 3 kali, maka rangking selanjutnya adalah tetap rangking 4. Namun Jika menggunakan rumus RANK hasilnya seprti pada tabel di bawah ini:</p>
+<span id="more"></span>
+<p><img src="/img/post/libreoffice-calc-rank1.png"></p>
+<h2 id="Solusi-Ranking-Ganda"><a href="#Solusi-Ranking-Ganda" class="headerlink" title="Solusi Ranking Ganda"></a>Solusi Ranking Ganda</h2><p>Nah, untuk solusi kasus di atas, dapat menggunakan kombinasi rumus SUMPRODUCT dan COUNTIF seperti berikut:</p>
+<pre>=SUMPRODUCT((A2<=$A$2:$A$11)/COUNTIF($A$2:$A$11;$A$2:$A$11))</pre>
+
+<h3 id="Penjelasan-Rumus"><a href="#Penjelasan-Rumus" class="headerlink" title="Penjelasan Rumus"></a>Penjelasan Rumus</h3><p>Mungkin Anda bingung bagaimana rumus tersebut menghasilkan peringkat yang diinginkan. Apalagi dalam rumus tersebut tidak menggunakan rumus RANK . Baiklah berikut ini penjelasan rincinya:</p>
+<pre>(A2<=$A$2:$A$11)</pre>
+
+<p>Bagian ini mencari apakah nilai A2 ≤ A2:A11, sehingga setiap nilai dari A2:A11 yang lebih besar atau sama dengan A2 akan bernilai TRUE. Dan dalam perhitungan, TRUE bernilai 1 sementara FALSE bernilai 0.</p>
+<p>Jika mengacu nilai pada tabel di atas, maka hasil perhitungannya adalah (1;1;1;1;1;1;1;1;0;1)</p>
+<pre>COUNTIF($A$2:$A$11;$A$2:$A$11)</pre>
+
+<p>Bagian ini berguna untuk menghitung banyaknya data pada A2:A11. Jika mengacu pada tabel di atas, hasil perhitungannya adalah (1;1;1;3;3;1;3;1;1;1)</p>
+<pre>SUMPRODUCT(...)</pre>
+
+<p>Kegunaan rumus ini adalah menjumlahkan hasil perkalian array (bisa juga untuk pembagian). Pada kasus ini rumus ini akan menjumlahkan hasil dari array pertama dibagi array kedua. Atau (1;1;1;1;1;1;1;1;0;1)/(1;1;1;3;3;1;3;1;1;1) = (1/1+1/1+1/1+1/3+1/3+1/1+1/3+1/1+0/1+1/1) = 7</p>
+<p>Berikut ini perbandingan menggunakan Rumus RANK dengan menggunakan kombinasi SUMPRODUCT+COUNTIFS:</p>
+<p><img src="/img/post/libreoffice-calc-rank2.png"></p>
+<h3 id="Alternatif-Lain"><a href="#Alternatif-Lain" class="headerlink" title="Alternatif Lain"></a>Alternatif Lain</h3><p>Selain menggunakan SUMPRODUCT, sebenarnya kita juga dapat menggunakan rumus SUM, namun harus menekan tombol Ctrl+Shift+Enter karena termasuk formula yang melibatkan banyak array.</p>
+<p>Itulah tadi bagaimana cara menentukan rangking ganda dengan tetap membiarkan rangking ganda tanpa ada urutan terlewat.</p>
+]]></content>
+      <categories>
+        <category>Tutorial</category>
+        <category>LibreOffice</category>
+        <category>Calc</category>
+      </categories>
+      <tags>
+        <tag>Calc</tag>
+        <tag>LibreOffice</tag>
+        <tag>Office</tag>
+        <tag>Function</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Bahas-Soal-Matematika-#1</title>
+    <url>/2021/11/28/matematika-bahas-soal-1/</url>
+    <content><![CDATA[<h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><p>Buktikan bahwa <mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -1.552ex" xmlns="http://www.w3.org/2000/svg" width="13.043ex" height="4.652ex" role="img" focusable="false" viewBox="0 -1370 5765 2056"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mfrac"><g data-mml-node="mrow" transform="translate(220,676)"><g data-mml-node="mi"><path data-c="1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path></g><g data-mml-node="mo" transform="translate(751.2,0)"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g><g data-mml-node="mi" transform="translate(1751.4,0)"><path data-c="1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path></g></g><g data-mml-node="mn" transform="translate(1060.2,-686)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g><rect width="2380.4" height="60" x="120" y="220"></rect></g><g data-mml-node="mo" transform="translate(2898.2,0)"><path data-c="2265" d="M83 616Q83 624 89 630T99 636Q107 636 253 568T543 431T687 361Q694 356 694 346T687 331Q685 329 395 192L107 56H101Q83 58 83 76Q83 77 83 79Q82 86 98 95Q117 105 248 167Q326 204 378 228L626 346L360 472Q291 505 200 548Q112 589 98 597T83 616ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z"></path></g><g data-mml-node="msqrt" transform="translate(3954,0)"><g transform="translate(853,0)"><g data-mml-node="mi"><path data-c="1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path></g><g data-mml-node="mi" transform="translate(529,0)"><path data-c="1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path></g></g><g data-mml-node="mo" transform="translate(0,156.8)"><path data-c="221A" d="M95 178Q89 178 81 186T72 200T103 230T169 280T207 309Q209 311 212 311H213Q219 311 227 294T281 177Q300 134 312 108L397 -77Q398 -77 501 136T707 565T814 786Q820 800 834 800Q841 800 846 794T853 782V776L620 293L385 -193Q381 -200 366 -200Q357 -200 354 -197Q352 -195 256 15L160 225L144 214Q129 202 113 190T95 178Z"></path></g><rect width="958" height="60" x="853" y="896.8"></rect></g></g></g></svg></mjx-container></p>
+<h2 id="Solusi"><a href="#Solusi" class="headerlink" title="Solusi"></a>Solusi</h2><p>Untuk setiap bilangan real <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.439ex" xmlns="http://www.w3.org/2000/svg" width="3.173ex" height="2.009ex" role="img" focusable="false" viewBox="0 -694 1402.7 888"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path></g><g data-mml-node="mo" transform="translate(529,0)"><path data-c="2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path></g><g data-mml-node="mi" transform="translate(973.7,0)"><path data-c="1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path></g></g></g></svg></mjx-container>, berlaku <mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -0.566ex" xmlns="http://www.w3.org/2000/svg" width="11.829ex" height="2.565ex" role="img" focusable="false" viewBox="0 -883.9 5228.6 1133.9"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="mi" transform="translate(389,0)"><path data-c="1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path></g><g data-mml-node="mo" transform="translate(1140.2,0)"><path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path></g><g data-mml-node="mi" transform="translate(2140.4,0)"><path data-c="1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path></g><g data-mml-node="msup" transform="translate(2569.4,0)"><g data-mml-node="mo"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g><g data-mml-node="mn" transform="translate(422,413) scale(0.707)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g><g data-mml-node="mo" transform="translate(3672.8,0)"><path data-c="2265" d="M83 616Q83 624 89 630T99 636Q107 636 253 568T543 431T687 361Q694 356 694 346T687 331Q685 329 395 192L107 56H101Q83 58 83 76Q83 77 83 79Q82 86 98 95Q117 105 248 167Q326 204 378 228L626 346L360 472Q291 505 200 548Q112 589 98 597T83 616ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z"></path></g><g data-mml-node="mn" transform="translate(4728.6,0)"><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path></g></g></g></svg></mjx-container></p>
+]]></content>
+      <categories>
+        <category>Matematika</category>
+        <category>Problem</category>
+      </categories>
+      <tags>
+        <tag>matematika</tag>
+        <tag>problem</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mengompres filw PDF di Linux</title>
+    <url>/2021/04/05/pdf-kompres-linux/</url>
+    <content><![CDATA[<h2 id="Mengompres-file-PDF-menggunakan-Terminal-Konsol-Linux"><a href="#Mengompres-file-PDF-menggunakan-Terminal-Konsol-Linux" class="headerlink" title="Mengompres file PDF menggunakan Terminal (Konsol) Linux"></a>Mengompres file PDF menggunakan Terminal (Konsol) Linux</h2><h3 id="Menggunakan-Ghostscript"><a href="#Menggunakan-Ghostscript" class="headerlink" title="Menggunakan Ghostscript"></a>Menggunakan Ghostscript</h3><h3 id="Menggunakan-ps2pdf"><a href="#Menggunakan-ps2pdf" class="headerlink" title="Menggunakan ps2pdf"></a>Menggunakan ps2pdf</h3><h2 id="Mengompres-file-PDF-menggunakan-GUI"><a href="#Mengompres-file-PDF-menggunakan-GUI" class="headerlink" title="Mengompres file PDF menggunakan GUI"></a>Mengompres file PDF menggunakan GUI</h2><h3 id="Menggunakan-Density"><a href="#Menggunakan-Density" class="headerlink" title="Menggunakan Density"></a>Menggunakan Density</h3>]]></content>
+      <categories>
+        <category>Tutorial</category>
+        <category>PDF</category>
+      </categories>
+      <tags>
+        <tag>compress pdf</tag>
+        <tag>ps2pdf</tag>
+        <tag>gs</tag>
+      </tags>
+  </entry>
+</search>
