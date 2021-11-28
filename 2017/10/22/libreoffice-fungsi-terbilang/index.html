@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>Fungsi Terbilang Untuk LibreOffice Calc - Catatan Nurkholis 2</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Catatan Nurkholis 2"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Catatan Nurkholis 2"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="Bagi sebagian besar pengguna Aplikasi pengolah angka Microsoft Excel, Fungsi Terbilang banyak dipergunakan di berbagai kalangan untuk membilang suatu bilangan menjadi kalimat. Khususnya bagi Anda yang"><meta property="og:type" content="article"><meta property="og:title" content="Fungsi Terbilang Untuk LibreOffice Calc"><meta property="og:url" content="https://nurkholis88.github.io/2017/10/22/libreoffice-fungsi-terbilang/"><meta property="og:site_name" content="Catatan Nurkholis 2"><meta property="og:description" content="Bagi sebagian besar pengguna Aplikasi pengolah angka Microsoft Excel, Fungsi Terbilang banyak dipergunakan di berbagai kalangan untuk membilang suatu bilangan menjadi kalimat. Khususnya bagi Anda yang"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://nurkholis88.github.io/img/post/lo-calc-terbilang.png"><meta property="article:published_time" content="2017-10-22T01:24:00.000Z"><meta property="article:modified_time" content="2021-11-28T13:25:22.659Z"><meta property="article:author" content="Nurkholis"><meta property="article:tag" content="Calc"><meta property="article:tag" content="Extension"><meta property="article:tag" content="LibreOffice"><meta property="article:tag" content="Office"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/post/lo-calc-terbilang.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://nurkholis88.github.io/2017/10/22/libreoffice-fungsi-terbilang/"},"headline":"Fungsi Terbilang Untuk LibreOffice Calc","image":["https://nurkholis88.github.io/img/post/lo-calc-terbilang.png"],"datePublished":"2017-10-22T01:24:00.000Z","dateModified":"2021-11-28T13:25:22.659Z","author":{"@type":"Person","name":"Nurkholis"},"publisher":{"@type":"Organization","name":"Catatan Nurkholis 2","logo":{"@type":"ImageObject"}},"description":"Bagi sebagian besar pengguna Aplikasi pengolah angka Microsoft Excel, Fungsi Terbilang banyak dipergunakan di berbagai kalangan untuk membilang suatu bilangan menjadi kalimat. Khususnya bagi Anda yang"}</script><link rel="canonical" href="https://nurkholis88.github.io/2017/10/22/libreoffice-fungsi-terbilang/"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><!--!--><meta name="generator" content="Hexo 5.4.0"></head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">Catatan Nurkholis 2</a></div><div class="navbar-menu"><div class="navbar-end"></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2017-10-22T01:24:00.000Z" title="22/10/2017 08.24.00">2017-10-22</time></span><span class="level-item">Updated&nbsp;<time dateTime="2021-11-28T13:25:22.659Z" title="28/11/2021 20.25.22">2021-11-28</time></span><span class="level-item"><a class="link-muted" href="/categories/Tutorial/">Tutorial</a><span> / </span><a class="link-muted" href="/categories/Tutorial/LibreOffice/">LibreOffice</a></span></div></div><h1 class="title is-3 is-size-4-mobile">Fungsi Terbilang Untuk LibreOffice Calc</h1><div class="content"><p>Bagi sebagian besar pengguna Aplikasi pengolah angka Microsoft Excel, Fungsi Terbilang banyak dipergunakan di berbagai kalangan untuk membilang suatu bilangan menjadi kalimat. Khususnya bagi Anda yang hendak membuat format kwitansi, atau format nilai siswa yang menampilkan nilai angka dan nilai huruf. Namun demikian, fungsi ini bukanlah fungsi bawaan dari aplikasi pengolah angka manapun (baik Excel, Calc, maupun yang lainnya). Satu-satunya fungsi terbilang yang resmi ada di daftar formula pengolah angka hanyalah BAHTTEXT yang mengubah bilangan menjadi teks dalam bahasa Thailand beserta mata uangnya. Sehingga untuk fungsi TERBILANG dalam bahasa Indonesia maupun yang lainnya, diperlukan UDF (User Defined Function).</p>
+<span id="more"></span>
+
+<h2 id="NumberText-sebagai-Solusi-Fungsi-Terbilang"><a href="#NumberText-sebagai-Solusi-Fungsi-Terbilang" class="headerlink" title="NumberText sebagai Solusi Fungsi Terbilang"></a>NumberText sebagai Solusi Fungsi Terbilang</h2><p>Pada LibreOffice Calc, Anda tidak perlu repot-repot membuat fungsi terbilang itu sendiri, karena di situs resmi LibreOffice telah disediakan extension untuk mengatasi hal tersebut. Extension yang perlu disiapkan adalah numbertext-0.9.5.oxt yang dapat diunduh di <a target="_blank" rel="noopener" href="https://extensions.libreoffice.org/extensions/numbertext-1">https://extensions.libreoffice.org/extensions/numbertext-1</a>. Anda juga dapat mengunduhnya di situs resmi Numbertext <a target="_blank" rel="noopener" href="http://www.numbertext.org/">http://www.numbertext.org/</a>. Extension ini kompatible dengan versi LibreOffice 3.6 ke atas.</p>
+<h2 id="Kelebihan-dan-Kekurangan-NumberText"><a href="#Kelebihan-dan-Kekurangan-NumberText" class="headerlink" title="Kelebihan dan Kekurangan NumberText"></a>Kelebihan dan Kekurangan NumberText</h2><h3 id="Kelebihan"><a href="#Kelebihan" class="headerlink" title="Kelebihan"></a>Kelebihan</h3><ol>
+<li> Tidak perlu mengaktifkan Macro</li>
+<li> Formula dapat dijalankan di berbagai komputer yang menggunakan extension ini pada LibreOffice Calc / OpenOffice.org Calc. Berbeda dengan Add Ins pada Ms.Excel yang harus memperbaiki ulang rumus terbilang saat dijalankan di komputer lain.</li>
+<li> Mampu menangani bilangan hingga 15 digit (ratusan trilyun)</li>
+<li> Mampu menangani desimal hingga 15 digit</li>
+<li> Memiliki dukungan multi-bahasa. Ada 42 bahasa yang didukung dengan extension ini.</li>
+</ol>
+<h3 id="Kekurangan"><a href="#Kekurangan" class="headerlink" title="Kekurangan"></a>Kekurangan</h3><ol>
+<li> Belum ada dukungan untuk bahasa Arab</li>
+<li> Extension ini hanya tersedia untuk LibreOffice Calc dan OpenOffice.org Calc, sehingga akan menghasilkan #NAME? saat dibuka pada aplikasi pengolah angka lainnya.</li>
+</ol>
+<h2 id="Instalasi"><a href="#Instalasi" class="headerlink" title="Instalasi"></a>Instalasi</h2><p>Untuk instalasi Extension tersebut, langkah-langkahnya adalah sebagai berikut:</p>
+<ol>
+<li> Buka file numbertext-0.9.5.oxt hingga muncul dialog konfirmasi.</li>
+<li> Klik Yes / OK</li>
+<li> Tunggu hingga proses selesai, kemudian klik Close</li>
+</ol>
+<p>Setelah selesai proses instalasi Extension, Restart Aplikasi LibreOffice agar agar Extension tersebut dapat dijalankan.</p>
+<h2 id="Penggunaan-Formula"><a href="#Penggunaan-Formula" class="headerlink" title="Penggunaan Formula"></a>Penggunaan Formula</h2><p>Terdapat dua rumus baru pada LibreOffice Calc setelah Numbertext terpasang. Kedua rumus baru itu adalah NUMBERTEXT() dan MONEYTEXT().<br>Untuk membilang bilangan ke dalam teks, sintaks rumusnya adalah<br><strong>=NUMBERTEXT(</strong><em>Number, Language</em><strong>)</strong>.<br> Sedangkan untuk membilang bilangan ke dalam teks disertai mata uang, sintaks rumusnya adalah <strong>=MONEYTEXT(</strong><em>Number, Currency/function, Language</em><strong>)</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Sintaks</strong></th>
+<th><strong>Fungsi</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Number</strong></td>
+<td>bilangan yang hendak diubah</td>
+</tr>
+<tr>
+<td><strong>Currency/function</strong></td>
+<td>menampilkan dan mengatur tipe mata uang. Apabila dikosongi, mata uang yang ditampilkan adalah mata uang standar dari bahasa yang digunakan.</td>
+</tr>
+<tr>
+<td><strong>Language</strong></td>
+<td>Bahasa yang digunakan, jika dikosongi bahasa yang dihasilkan adalah bahasa default Locale Setting (lihat di menu Tools &gt; Option &gt; Language Settings )</td>
+</tr>
+</tbody></table>
+<p> Untuk lebih jelasnya, perhatikan contoh berikut:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Formula</strong></th>
+<th><strong>Hasil</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>=NUMBERTEXT(25)</td>
+<td>dua puluh lima</td>
+</tr>
+<tr>
+<td>=NUMBERTEXT(25;”th-TH”)</td>
+<td>ยี่สิบห้า</td>
+</tr>
+<tr>
+<td>=NUMBERTEXT(25,25;”en-US”)</td>
+<td>twenty-five point two five</td>
+</tr>
+<tr>
+<td>=MONEYTEXT(25)</td>
+<td>dua puluh lima rupiah</td>
+</tr>
+<tr>
+<td>=MONEYTEXT(25;”USD”)</td>
+<td>dua puluh lima dolar Amerika</td>
+</tr>
+<tr>
+<td>=MONEYTEXT(25;”CNY”;”zh-ZH”)</td>
+<td>二十五人民币</td>
+</tr>
+</tbody></table>
+</div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/Calc/">Calc</a><a class="link-muted mr-2" rel="tag" href="/tags/Extension/">Extension</a><a class="link-muted mr-2" rel="tag" href="/tags/LibreOffice/">LibreOffice</a><a class="link-muted mr-2" rel="tag" href="/tags/Office/">Office</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2018/03/10/libreoffice-mengatasi-ranking-ganda/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">Mengatasi Ranking Ganda pada LibreOffice Calc</span></a></div></nav><!--!--></div><!--!--><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/">Catatan Nurkholis 2</a><p class="is-size-7"><span>&copy; 2021 Nurkholis</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><!--!--><script src="/js/main.js" defer></script><!--!--></body></html>
